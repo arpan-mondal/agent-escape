@@ -61,7 +61,7 @@ Every submission is attributed in the leaderboard and in the repo's `ATTRIBUTION
 
 ## Reporting Vulnerabilities
 
-If you discover a real sandbox escape in a production system, **do not** open a GitHub issue. Email the affected vendor's security team directly. If it's a vulnerability in AgentEscape itself (e.g., a canary that doesn't work), please report it to [arpan@tidewaylabs.com](mailto:arpan@tidewaylabs.com) with details.
+If you discover a real sandbox escape in a production system, **do not** open a GitHub issue. Email the affected vendor's security team directly. If it's a vulnerability in AgentEscape itself (e.g., a canary that doesn't work), please report it to [accesstoarpan@gmail.com](mailto:accesstoarpan@gmail.com) with details.
 
 ## Community Principles
 
@@ -71,7 +71,7 @@ If you discover a real sandbox escape in a production system, **do not** open a 
 
 ## Questions?
 
-Open an issue with `[discussion]` in the title, or reach out on X [@arpanrome](https://twitter.com/arpanrome).
+Open an issue with `[discussion]` in the title, or reach out on X [@arpanstacy](https://twitter.com/arpanstacy).
 
 ## License
 
