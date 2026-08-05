@@ -30,7 +30,7 @@ Five escape categories, each with a canary that makes success measurable:
 
 ## Isolation Backends Tested
 
-- Firecracker (microVM, from StacyOS)
+- Firecracker (microVM)
 - Docker + runc (container)
 - gVisor (user-space kernel)
 - systemd-nspawn (lightweight namespace)
@@ -56,7 +56,7 @@ AgentEscape is designed for community submission of new escape attempts, backend
 
 - SandboxEscapeBench (arXiv:2603.02277)
 - Inspect (google-deepmind/inspect)
-- control-arena (MIRI/Anthropic)
+- control-arena (UK AISI / Redwood Research)
 - StacyOS: Federated Execution & Cryptographic Trust for AI Artifacts (prior isolation work)
 
 ## Citation
