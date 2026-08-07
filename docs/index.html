@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgentEscape</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 42rem;
+      margin: 4rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+    }
+    h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+    .tagline { font-size: 1.15rem; color: #555; margin-top: 0; margin-bottom: 2rem; }
+    a { color: #0b62d6; }
+    footer { margin-top: 2.5rem; font-size: 0.9rem; color: #777; }
+  </style>
+</head>
+<body>
+  <h1>AgentEscape</h1>
+  <p class="tagline">A multi-backend sandbox escape benchmark for AI agent execution isolation.</p>
+
+  <p>
+    When AI agents run code in sandboxes, when and how do they escape? AgentEscape is
+    an open benchmark that measures escape success across five threat categories &mdash;
+    filesystem breakout, network egress, resource exhaustion, side channel, and
+    privilege escalation &mdash; each with a canary that makes success unambiguous. It runs
+    the same threat model across multiple isolation backends (Firecracker, Docker, gVisor,
+    systemd-nspawn, and a native-process baseline) so you can tell a true isolation failure
+    apart from a mere misconfiguration.
+  </p>
+
+  <p>
+    This matters because a sandbox escape is a concrete, measurable control failure: it
+    tells you exactly when your isolation assumptions break. We treat sandbox escape and
+    reward hacking as the same phenomenon &mdash; an agent optimizing for a goal, then finding
+    that the boundary meant to contain it can be crossed. Existing work tests specific
+    backends or scenarios; there is no open comparison across isolation strategies. AgentEscape
+    is built as infrastructure from day one, with a public contribution path and leaderboard.
+  </p>
+
+  <p>
+    Everything lives on GitHub. Start with the
+    <a href="https://github.com/arpan-mondal/agent-escape">repository</a>, then read the
+    <a href="https://github.com/arpan-mondal/agent-escape/blob/main/threat-model/README.md">threat model</a>
+    for the full specification of each escape category, its canary, and cross-backend
+    expectations. Contributions &mdash; new escapes, new backends, and canary improvements &mdash;
+    are welcome.
+  </p>
+
+  <footer>
+    <a href="https://github.com/arpan-mondal/agent-escape">github.com/arpan-mondal/agent-escape</a>
+    &middot; MIT licensed
+  </footer>
+</body>
+</html>
