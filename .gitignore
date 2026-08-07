@@ -15,6 +15,12 @@ env/
 .env
 .env.*
 
+# ---- Go ----
+/bin/
+*.test
+*.out
+coverage.txt
+
 # ---- Rust ----
 target/
 Cargo.lock
